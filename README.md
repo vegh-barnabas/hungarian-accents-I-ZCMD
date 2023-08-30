@@ -1,3 +1,6 @@
+# Hungarian accents I-ZCMD
+Now you can use commands with hungarian accents, for example ```/nagyháború```, ```/írás``` etc...
+
 # Improved ZCMD
 **Latest Version: 0.2.3.0  (August 2016)**
 
