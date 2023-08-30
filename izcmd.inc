@@ -55,6 +55,16 @@ public OnPlayerCommandText(playerid, cmdtext[])
 	
 	static funcname[MAX_CLIENT_MSG_LENGTH] = "cmd_";
 
+	for(new i = 0; i < strlen(cmdtext); i++)
+	{
+		if(cmdtext[i] == 'á') cmdtext[i] = 'a';
+		else if(cmdtext[i] == 'é') cmdtext[i] = 'e';
+		else if(cmdtext[i] == 'í') cmdtext[i] = 'i';
+		else if(cmdtext[i] == 'á') cmdtext[i] = 'a';
+		else if(cmdtext[i] == 'ó' || cmdtext[i] == 'ö' || cmdtext[i] == 'ő') cmdtext[i] = 'o';
+		else if(cmdtext[i] == 'ú' || cmdtext[i] == 'ü' || cmdtext[i] == 'ű') cmdtext[i] = 'u';
+	}
+
 	#if defined IZCMD_ENABLE_CASE_SENSITIVITY
 		static pos;
 
